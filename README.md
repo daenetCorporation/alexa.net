@@ -1,2 +1,4 @@
 # alexa.net
-Axexa artifacts for .NET
+Alexa artifacts for .NET
+
+[![HighLevel View](/path/to/image)](images/IntroImage.png)
