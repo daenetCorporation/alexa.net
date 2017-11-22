@@ -15,13 +15,15 @@ namespace Alexa.Skills.Api
             {
                 Device device = new Device();
                 device.supportedInterfaces = obj.Value<JObject>("supportedInterfaces");
+                device.deviceId = obj.Value<string>("deviceId");
                 return device;
             }
             else
                 return null;
         }
 
-        public JObject supportedInterfaces { get; set; } 
+        public JObject supportedInterfaces { get; set; }
+        public string deviceId { get; set; }
 
         public List<string> getInterfaces()
         {
