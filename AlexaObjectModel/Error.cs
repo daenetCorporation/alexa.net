@@ -11,6 +11,9 @@ namespace Alexa.Skills.Api
 
         public static Error FromJObject(JObject obj)
         {
+            if (obj == null)
+                return null;
+
             TypeEnum type;
             Enum.TryParse(obj.Value<string>("error"), out type);
             Error error = new Error();
