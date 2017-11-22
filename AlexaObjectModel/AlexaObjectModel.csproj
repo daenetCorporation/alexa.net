@@ -27,6 +27,7 @@ https://social.msdn.microsoft.com/profile/Premier+Developer</Description>
     <RepositoryUrl>https://github.com/daenetCorporation/alexa.net.git</RepositoryUrl>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/12556447?v=4&amp;s=200</PackageIconUrl>
     <PackageTags>alexa, speech, iot, azure, aws</PackageTags>
+    <RootNamespace>Alexa.Skills.Api</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
