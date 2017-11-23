@@ -50,7 +50,7 @@ namespace Alexa.Skills.Api
 
     public class Resolutions
     {
-        public IList<Resolutionsperauthority> resolutionsPerAuthority { get; set; }
+        public IList<Resolutionsperauthority> ResolutionsPerAuthority { get; set; }
 
         internal static Resolutions FromJObject(JObject jObject)
         {
@@ -61,11 +61,11 @@ namespace Alexa.Skills.Api
 
             if (jObject["resolutionsPerAuthority"] != null)
             {
-                resolutions.resolutionsPerAuthority = new List<Resolutionsperauthority>();
+                resolutions.ResolutionsPerAuthority = new List<Resolutionsperauthority>();
 
                 foreach (var resolution in jObject["resolutionsPerAuthority"].Children())
                 {
-                    resolutions.resolutionsPerAuthority.Add(Resolutionsperauthority.FromJObject(resolution.Value<JObject>()));
+                    resolutions.ResolutionsPerAuthority.Add(Resolutionsperauthority.FromJObject(resolution.Value<JObject>()));
                 }
             }
 
@@ -77,7 +77,7 @@ namespace Alexa.Skills.Api
     {
         public string Authority { get; set; }
         public Status Status { get; set; }
-        public IList<Value> values { get; set; }
+        public IList<Value> Values { get; set; }
 
         internal static Resolutionsperauthority FromJObject(JObject jObject)
         {
@@ -105,7 +105,7 @@ namespace Alexa.Skills.Api
             {
                 Authority = jObject.Value<string>("authority"),
                 Status = Status.FromJObject(jObject.Value<JObject>("status")),
-                values = values
+                Values = values
         };
         }
     }
