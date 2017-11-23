@@ -16,7 +16,7 @@
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
     <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <Version>1.0.9</Version>
+    <Version>1.1.0</Version>
     <Description>Compiled static object model of Amazon Alexa Request/Response specification.
 For more information: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-interface-reference.
 https://social.msdn.microsoft.com/profile/Premier+Developer</Description>
